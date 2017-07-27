@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <div id="username_popup">
+      <form action="">
+        <h3>Enter your username:</h3>
+        <input type="text" name="username" autocomplete="off" placeholder="Enter your username" />
+      </form>
+    </div>
+    
+    <div class="container chat-app">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="online-users-box">
+            <h3 class="title">Online Users(<span class="online-users-number">0</span>)</h3>
+            <div class="online-users"></div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <ul id="messages"></ul>
+          <form action="" class="messageForm">
+            <input id="m" autocomplete="off" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+  </body>
+</html>
